@@ -11,13 +11,16 @@ This Flutter application provides a platform for discovering real estate propert
 ### Screenshots on Various Devices
 
 - **Home page iPhone 15 Pro Max (390x844 pixels)**
-<img src="https://github.com/Piyushhhhh/dribbble_real_estate_app/blob/main/screenshots/home.png" height="100">
+<img src="https://github.com/Piyushhhhh/dribbble_real_estate_app/blob/main/screenshots/home.png" height="700" >
 
 - **Search Page iPhone 15 Pro Max (390x844 pixels)**
-<img src="https://github.com/Piyushhhhh/dribbble_real_estate_app/blob/main/screenshots/search.png" height="100">
+<img src="https://github.com/Piyushhhhh/dribbble_real_estate_app/blob/main/screenshots/search.png" height="700">
 
   - **Walk-throuh Video iPhone 15 Pro Max (390x844 pixels)**
-  ![Walk-throuh Video](https://github.com/Piyushhhhh/dribbble_real_estate_app/assets/40383768/b643b3e5-b8db-4fd1-b11f-c87ebf999254)
+
+https://github.com/Piyushhhhh/dribbble_real_estate_app/assets/40383768/fdf2fe8b-086c-4b3f-916d-6152cbac3129
+
+
 
 ## Dependencies
 - **flutter_map:** For displaying interactive maps using OpenStreetMap tiles.

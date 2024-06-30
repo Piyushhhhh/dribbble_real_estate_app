@@ -1,0 +1,51 @@
+import 'package:dribbble_real_estate_app/values/constants/app_colors.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/svg.dart';
+
+class SearchWidget extends StatelessWidget {
+  const SearchWidget({required this.scale, super.key});
+
+  final Animation<double> scale;
+
+  @override
+  Widget build(BuildContext context) {
+    return ScaleTransition(
+      scale: scale,
+      child: Container(
+        width: 200,
+        height: 46.h,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(46.h),
+          color: AppColors.white,
+        ),
+        padding: EdgeInsets.only(left: 16.w, right: 8.w),
+        child: Row(
+          children: [
+            Container(
+              width: 16.w,
+              height: 16.w,
+              margin: EdgeInsets.only(right: 12.w),
+              child: SvgPicture.asset(
+                'assets/svg/search.svg',
+                colorFilter: const ColorFilter.mode(
+                  AppColors.black,
+                  BlendMode.srcIn,
+                ),
+              ),
+            ),
+            Expanded(
+              child: Text(
+                'Saint Petersburg',
+                style: TextStyle(
+                  color: AppColors.black,
+                  fontSize: 13.sp,
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}

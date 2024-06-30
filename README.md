@@ -1,16 +1,28 @@
-# dribbble_real_estate_app
+# Real Estate Discovery App
 
-A new Flutter project.
+This Flutter application provides a platform for discovering real estate properties using interactive maps and various search filters. It offers a user-friendly interface to explore properties based on location, price, and infrastructure.
 
-## Getting Started
+# Features
+Interactive Maps: View property locations and details on a dynamic map powered by OpenStreetMap tiles.
 
-This project is a starting point for a Flutter application.
+Search and Filters: Search for properties by location and apply filters based on price, area, and infrastructure.
 
-A few resources to get you started if this is your first Flutter project:
+Animated UI Elements: Smooth animations for enhanced user experience, including marker animations and search bar interactions.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+# Screenshots
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Home Page](https://github.com/Piyushhhhh/dribbble_real_estate_app/blob/main/screenshots/home.png)
+
+![Search Page](https://github.com/Piyushhhhh/dribbble_real_estate_app/blob/main/screenshots/search.png)
+
+
+# Dependencies
+
+flutter_map: For displaying interactive maps using OpenStreetMap tiles.
+flutter_screenutil: For responsive UI design using screen size adaptation.
+Other dependencies can be found in pubspec.yaml.
+
+# Credits
+Animations: Inspired by animations found on Dribbble.
+- [Dribbble animation link ](https://dribbble.com/shots/23780608-Real-Estate-App)
+

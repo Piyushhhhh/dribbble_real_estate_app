@@ -1,7 +1,8 @@
 import 'package:dribbble_real_estate_app/values/constants/app_colors.dart';
 import 'package:dribbble_real_estate_app/values/constants/strings.dart';
 import 'package:dribbble_real_estate_app/view/home/home_page.dart';
-import 'package:dribbble_real_estate_app/view/home/widgets/bottom_nav/custom_bottom_nav_bar.dart';
+import 'package:dribbble_real_estate_app/view/bottom_nav/custom_bottom_nav_bar.dart';
+import 'package:dribbble_real_estate_app/view/search/search_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -12,8 +13,16 @@ void main() async {
   runApp(const App());
 }
 
-class App extends StatelessWidget {
+class App extends StatefulWidget {
   const App({super.key});
+
+  @override
+  State<App> createState() => _AppState();
+}
+
+class _AppState extends State<App> {
+  Widget currentPage = const HomePage();
+  int currentIndex = 2;
 
   @override
   Widget build(BuildContext context) {
@@ -56,12 +65,45 @@ class App extends StatelessWidget {
                     'assets/svg/heart-solid.svg',
                   ),
                 ],
-                onTap: (int) {},
-                currentIndex: 2,
+                onTap: navigate,
+                currentIndex: currentIndex,
               ),
-              body: const HomePage()),
+              body: currentPage),
         );
       },
     );
+  }
+
+  void navigate(int value) {
+    if (value == 0) {
+      setState(() {
+        currentPage = const SearchPage();
+        currentIndex = value;
+      });
+    }
+    if (value == 1) {
+      setState(() {
+        currentIndex = value;
+        currentPage = Container();
+      });
+    }
+    if (value == 3) {
+      setState(() {
+        currentIndex = value;
+        currentPage = Container();
+      });
+    }
+    if (value == 4) {
+      setState(() {
+        currentIndex = value;
+        currentPage = Container();
+      });
+    }
+    if (value == 2) {
+      setState(() {
+        currentIndex = value;
+        currentPage = const HomePage();
+      });
+    }
   }
 }

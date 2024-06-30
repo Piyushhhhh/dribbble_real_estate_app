@@ -5,4 +5,5 @@ class Strings {
   static const String rent = 'Rent';
   static const String hiMarina = 'Hi, Marina';
   static const String letsSelect = "Let's select your perfect place";
+  static const String listOfVariants = "List of variants";
 }
